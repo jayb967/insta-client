@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="L0p-TG-UnQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="insta_client" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen_Shot_2017_03_27_at_2.51.00_PM" translatesAutoresizingMaskIntoConstraints="NO" id="6IQ-ZP-JeU">
+                                <rect key="frame" x="129.5" y="84" width="116" height="500"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="gmE-qb-60R" appends="YES" id="Uqm-1g-Uqe"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bI-kZ-aCF" userLabel="Post">
+                                <rect key="frame" x="129" y="-46" width="116" height="30"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Post"/>
+                                <connections>
+                                    <action selector="postButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O0a-pD-Lve"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ch-Gx-fb9">
+                                <rect key="frame" x="129" y="784" width="116" height="30"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Filter"/>
+                                <connections>
+                                    <action selector="filterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iYF-CM-eSh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.81272263600000005" green="0.81272263600000005" blue="0.81272263600000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4Ch-Gx-fb9" firstAttribute="top" secondItem="6IQ-ZP-JeU" secondAttribute="bottom" constant="200" id="1yD-an-aUj"/>
+                            <constraint firstItem="7bI-kZ-aCF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9rH-Vq-cEi"/>
+                            <constraint firstItem="4Ch-Gx-fb9" firstAttribute="centerX" secondItem="6IQ-ZP-JeU" secondAttribute="centerX" id="9vT-Ky-Y3U"/>
+                            <constraint firstItem="6IQ-ZP-JeU" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.75" id="ARG-Mc-4I7"/>
+                            <constraint firstItem="7bI-kZ-aCF" firstAttribute="centerX" secondItem="6IQ-ZP-JeU" secondAttribute="centerX" id="K3s-ih-8rC"/>
+                            <constraint firstItem="6IQ-ZP-JeU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NZm-rE-QqV"/>
+                            <constraint firstItem="4Ch-Gx-fb9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z8k-v8-BrM"/>
+                            <constraint firstItem="6IQ-ZP-JeU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ngh-Lw-wsr"/>
+                            <constraint firstItem="4Ch-Gx-fb9" firstAttribute="width" secondItem="6IQ-ZP-JeU" secondAttribute="width" id="p4U-9n-BAI"/>
+                            <constraint firstItem="7bI-kZ-aCF" firstAttribute="width" secondItem="6IQ-ZP-JeU" secondAttribute="width" id="stx-xK-8PV"/>
+                            <constraint firstItem="6IQ-ZP-JeU" firstAttribute="top" secondItem="7bI-kZ-aCF" secondAttribute="bottom" constant="100" id="wpL-XJ-ZV3"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home View" id="iTu-H3-lW1">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="-131" vertical="-3"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="filterButtonTopConstraint" destination="1yD-an-aUj" id="ngP-w6-dZu"/>
+                        <outlet property="imageView" destination="6IQ-ZP-JeU" id="gEh-Gl-kYA"/>
+                        <outlet property="postButtonBottomConstraint" destination="wpL-XJ-ZV3" id="eTt-A1-2Ub"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="gmE-qb-60R">
+                    <connections>
+                        <action selector="imageTapped:" destination="BYZ-38-t0r" id="qrJ-DS-ATG"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1076" y="118.29085457271366"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="xFy-RU-2aT">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="L0p-TG-UnQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="39f-43-uml">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="tzF-8G-9Fm"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lbT-9b-v7B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Screen_Shot_2017_03_27_at_2.51.00_PM" width="116" height="115"/>
+    </resources>
+</document>
