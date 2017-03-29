@@ -10,17 +10,22 @@
 		281A7B9C1E8984E2008916CA /* CloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281A7B9B1E8984E2008916CA /* CloudKit.swift */; };
 		281A7B9F1E898AFF008916CA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 281A7B9E1E898AFF008916CA /* MapKit.framework */; };
 		281A7BA11E898D68008916CA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281A7BA01E898D68008916CA /* HomeViewController.swift */; };
+		281B0EF71E8AD10600761880 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B0EF61E8AD10600761880 /* Post.swift */; };
+		281B0EFA1E8AD36E00761880 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B0EF91E8AD36E00761880 /* UIExtensions.swift */; };
 		282461251E897F1F00DE2674 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282461241E897F1F00DE2674 /* AppDelegate.swift */; };
 		2824612A1E897F1F00DE2674 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 282461281E897F1F00DE2674 /* Main.storyboard */; };
 		2824612C1E897F1F00DE2674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2824612B1E897F1F00DE2674 /* Assets.xcassets */; };
 		2824612F1E897F1F00DE2674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2824612D1E897F1F00DE2674 /* LaunchScreen.storyboard */; };
-		2856FB701E89C92D0036D604 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2856FB6F1E89C92D0036D604 /* CloudKit.framework */; };
+		28B261E01E8AE7210051BE4B /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B261DF1E8AE7210051BE4B /* Filters.swift */; };
+		28B261E21E8B11260051BE4B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B261E11E8B11260051BE4B /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		281A7B9B1E8984E2008916CA /* CloudKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKit.swift; sourceTree = "<group>"; };
 		281A7B9E1E898AFF008916CA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		281A7BA01E898D68008916CA /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		281B0EF61E8AD10600761880 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		281B0EF91E8AD36E00761880 /* UIExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
 		282461211E897F1F00DE2674 /* insta-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "insta-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		282461241E897F1F00DE2674 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		282461291E897F1F00DE2674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -28,7 +33,8 @@
 		2824612E1E897F1F00DE2674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		282461301E897F1F00DE2674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2856FB6E1E89C9280036D604 /* insta-client.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "insta-client.entitlements"; sourceTree = "<group>"; };
-		2856FB6F1E89C92D0036D604 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		28B261DF1E8AE7210051BE4B /* Filters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
+		28B261E11E8B11260051BE4B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +43,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				281A7B9F1E898AFF008916CA /* MapKit.framework in Frameworks */,
-				2856FB701E89C92D0036D604 /* CloudKit.framework in Frameworks */,
+				28B261E21E8B11260051BE4B /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,10 +53,20 @@
 		281A7B9D1E898AFF008916CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2856FB6F1E89C92D0036D604 /* CloudKit.framework */,
+				28B261E11E8B11260051BE4B /* CloudKit.framework */,
 				281A7B9E1E898AFF008916CA /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		281B0EF81E8AD10E00761880 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				28B261DF1E8AE7210051BE4B /* Filters.swift */,
+				281B0EF61E8AD10600761880 /* Post.swift */,
+				281B0EF91E8AD36E00761880 /* UIExtensions.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		282461181E897F1F00DE2674 = {
@@ -73,6 +89,7 @@
 		282461231E897F1F00DE2674 /* insta-client */ = {
 			isa = PBXGroup;
 			children = (
+				281B0EF81E8AD10E00761880 /* Model */,
 				2856FB6E1E89C9280036D604 /* insta-client.entitlements */,
 				28CE5CAD1E89822700C47636 /* Controller */,
 				28CE5CAE1E89828400C47636 /* Views */,
@@ -196,6 +213,9 @@
 				281A7B9C1E8984E2008916CA /* CloudKit.swift in Sources */,
 				282461251E897F1F00DE2674 /* AppDelegate.swift in Sources */,
 				281A7BA11E898D68008916CA /* HomeViewController.swift in Sources */,
+				28B261E01E8AE7210051BE4B /* Filters.swift in Sources */,
+				281B0EFA1E8AD36E00761880 /* UIExtensions.swift in Sources */,
+				281B0EF71E8AD10600761880 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +342,7 @@
 				DEVELOPMENT_TEAM = 5EB567WJ73;
 				INFOPLIST_FILE = "insta-client/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jaybalderas.insta-client";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.x.insta-client";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -336,7 +356,7 @@
 				DEVELOPMENT_TEAM = 5EB567WJ73;
 				INFOPLIST_FILE = "insta-client/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jaybalderas.insta-client";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.x.insta-client";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

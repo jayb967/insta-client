@@ -9,6 +9,8 @@
 import Foundation
 import CloudKit
 
+typealias PostCompletion = (Bool) -> ()
+
 class CloudKit {
    static let shared = CloudKit() //this makes it a singleton
    
@@ -16,6 +18,31 @@ class CloudKit {
    
    var privateDatabase : CKDatabase {
       return container.privateCloudDatabase
+   }
+   func save(post: Post, completion: @escaping PostCompletion) {
+      do {
+         if let record = try Post.recordFor(post: post){
+            
+            privateDatabase.save(record, completionHandler: { (record, error) in
+               
+               if error != nil{
+                completion(false)
+                  print(error?.localizedDescription)
+                  
+                  return
+               }
+               if let record = record {
+                  print(record)
+                  completion(true)
+               } else {
+                  completion(false)
+               }
+               
+            })
+         }
+      } catch {
+         print(error)
+      }
    }
    
 }
