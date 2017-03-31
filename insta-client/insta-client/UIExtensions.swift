@@ -31,3 +31,9 @@ extension UIImage {
    }
    
 }
+//makes strigified version of class aka galleryCell.indentifier
+extension UIResponder {
+   static var identifier : String {
+      return String(describing: self)
+   }
+}
