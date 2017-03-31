@@ -18,6 +18,10 @@
 		2824612F1E897F1F00DE2674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2824612D1E897F1F00DE2674 /* LaunchScreen.storyboard */; };
 		28B261E01E8AE7210051BE4B /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B261DF1E8AE7210051BE4B /* Filters.swift */; };
 		28B261E21E8B11260051BE4B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B261E11E8B11260051BE4B /* CloudKit.framework */; };
+		28C270171E8C23710022D684 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C270161E8C23710022D684 /* GalleryViewController.swift */; };
+		28C270191E8C277B0022D684 /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C270181E8C277B0022D684 /* GalleryCell.swift */; };
+		28C2701B1E8C37C40022D684 /* GalleryCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2701A1E8C37C40022D684 /* GalleryCollectionViewLayout.swift */; };
+		28C2701D1E8D759B0022D684 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2701C1E8D759A0022D684 /* FilterCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,10 @@
 		2856FB6E1E89C9280036D604 /* insta-client.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "insta-client.entitlements"; sourceTree = "<group>"; };
 		28B261DF1E8AE7210051BE4B /* Filters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
 		28B261E11E8B11260051BE4B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		28C270161E8C23710022D684 /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		28C270181E8C277B0022D684 /* GalleryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
+		28C2701A1E8C37C40022D684 /* GalleryCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewLayout.swift; sourceTree = "<group>"; };
+		28C2701C1E8D759A0022D684 /* FilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,8 @@
 		28CE5CAD1E89822700C47636 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				28C2701A1E8C37C40022D684 /* GalleryCollectionViewLayout.swift */,
+				28C270161E8C23710022D684 /* GalleryViewController.swift */,
 				282461241E897F1F00DE2674 /* AppDelegate.swift */,
 				281A7B9B1E8984E2008916CA /* CloudKit.swift */,
 				281A7BA01E898D68008916CA /* HomeViewController.swift */,
@@ -111,7 +121,9 @@
 		28CE5CAE1E89828400C47636 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				28C270181E8C277B0022D684 /* GalleryCell.swift */,
 				282461281E897F1F00DE2674 /* Main.storyboard */,
+				28C2701C1E8D759A0022D684 /* FilterCell.swift */,
 				2824612D1E897F1F00DE2674 /* LaunchScreen.storyboard */,
 			);
 			name = Views;
@@ -211,11 +223,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				281A7B9C1E8984E2008916CA /* CloudKit.swift in Sources */,
+				28C270171E8C23710022D684 /* GalleryViewController.swift in Sources */,
 				282461251E897F1F00DE2674 /* AppDelegate.swift in Sources */,
+				28C2701B1E8C37C40022D684 /* GalleryCollectionViewLayout.swift in Sources */,
 				281A7BA11E898D68008916CA /* HomeViewController.swift in Sources */,
+				28C270191E8C277B0022D684 /* GalleryCell.swift in Sources */,
 				28B261E01E8AE7210051BE4B /* Filters.swift in Sources */,
 				281B0EFA1E8AD36E00761880 /* UIExtensions.swift in Sources */,
 				281B0EF71E8AD10600761880 /* Post.swift in Sources */,
+				28C2701D1E8D759B0022D684 /* FilterCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
