@@ -53,7 +53,7 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
    
    override func viewDidAppear(_ animated: Bool) {
       super.viewDidAppear(animated)
-      filterButtonTopConstraint.constant = 8
+      filterButtonTopConstraint.constant = -555
       postButtonBottomConstraint.constant = 8
       
       
